@@ -5,7 +5,7 @@ public class Sorting {
         int[] n = {12,5, 6, 3, 13};
         System.out.println(n.length);
         for (int i = 0; i < n.length-1; i++) {
-            System.out.println("i"+1);
+            System.out.print("i:"+i);
             for (int j = i+1; j < n.length; j++) {
                 System.out.print("  "+j+",");
                 if (n[i] < n[j]){
@@ -14,10 +14,8 @@ public class Sorting {
                     n[j] = tmp;
 
                 }
-
             }
             System.out.println();
-
         }
         for (int i = 0; i < n.length; i++) {
             System.out.print(n[i]+",");
